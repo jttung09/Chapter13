@@ -1,0 +1,20 @@
+pg589)
+FALSE: Swing components are elements such as buttons; you can usually recognize their names because they contain the word "Swing."
+-> They are recognized by the names starting with "J".
+TRUE: Each swing component is a descendant of JComponent, which in thrun inherits from the java.awt.Container class.
+TRUE: You insert the import statement import javax.swing.*; at the beginning of your program.
+
+pg594)
+TRUE: The JFrame class contains overloaded constructors; for example, you can specify a title or not.
+TRUE: An advantage to using a JFrame is that it resembles traditional frames that people are used to using.
+FALSE: When a user closes a JFrame by clicking the Close button, the default behavior is for the application to end.
+-> The default behavior is for the JFrame to become hidden and the application to keep running
+
+pg597)
+TRUE: JLabel is a built-in Java Swing class that holds text you can display.
+FALSE: You can change a JLabel's text by using its name, a dot, and the add() method, then using the desired text as the argument.
+-> .add() adds a JLabel to a JFrame, use .setText() to change its text.
+TRUE: If you add or remove a component from a container after is is visible, you also must call validate() and repaint().
+
+pg600)
+// TODO
