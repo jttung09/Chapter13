@@ -17,4 +17,50 @@ FALSE: You can change a JLabel's text by using its name, a dot, and the add() me
 TRUE: If you add or remove a component from a container after is is visible, you also must call validate() and repaint().
 
 pg600)
-// TODO
+FALSE: If you do not provide a layout manager for a JFrame, you cannot add multiple components to it.
+-> If you do not provide a layout manager for a JFrame, you can add multiple components to it, but only the most recently added one is visible.
+TRUE: The normal (default) behavior of a JFrame is to use a layout format named BorderLayout.
+TRUE: The flow layout manager places components in a row, and when a row is filled, it automatically spills components into the next row.
+
+pg602)
+TRUE: The advantage to creating a child class of JFrame is that you can set the JFrame’s properties within your object’s constructor so that it is automatically endowed with the features that you have specified.
+FALSE: When a class descends from JFrame, you can use super()or setTitle()to set the title within any of the child’s methods.
+->  When a class descends from JFrame, you can use super() or setTitle() to set the title within the child's constructor. However, super() does not work in other methods.
+TRUE: When you extend a JFrame to create a new custom class, you can decide which attributes you want to set within the class and which you want to leave to the applications that will use the class.
+
+pg606)
+TRUE: A JTextField is a component into which a user can type a single line of text data; typically, a user types a line into a JTextField and then presses Enter on the keyboard or clicks a button with the mouse to enter the data.
+TRUE: A JButton is a Component the user can click with a mouse to make a selection.
+FALSE: Tool tips are the different symbols you can select to display as a cursor in your applications.
+-> Tool tips are popup windows that can help a user understand the purpose of components in an application; the tool tip appears when a user hovers the mouse pointer over the component.
+
+pg611)
+FALSE: Within an event-driven program, a component on which an event is generated is a listener.
+-> Within an event-driven program, a component on which an event is generated is the source of the event and an object that is interested in an event is a listener.
+TRUE: You prepare your class to accept button-press events by importing the java.awt.event package into your program and adding the phrase implements ActionListener to the class header.
+TRUE: A class that can react to ActionEvents includes an actionPerformed()method.
+
+pg614)
+TRUE: A class can implement as many event listeners as it needs.
+TRUE: Any object can be notified of a mouse click or keyboard press as long as it implements the appropriate interface and is
+registered as an event listener on the appropriate event source.
+FALSE: Every event-handling method accepts a parameter that represents the listener for the event.
+-> Every event-handling method accepts a parameter that represents the generated event.
+
+pg617)
+TRUE: A JCheckBox consists of a label positioned beside a square; you can click the square to display or remove a check mark.
+FALSE: When you construct a JCheckBox, you must assign it a label; a new JCheckBox always appears selected.
+-> When you construct a JCheckBox, you can choose to assign it a label or if it appears selected.
+TRUE: When the status of a JCheckBox changes from unchecked to checked (or from checked to unchecked), an ItemEvent is generated, and the itemStateChanged()method executes.
+
+pg619) 
+FALSE: When you create a ButtonGroup, you can group several components, such as JCheckBoxes, so a user can select multiple options simultaneously.
+-> When you create a ButtonGroup, you can group several components such as JCheckBoxes, so a user can select one at a time.
+so a user can select only one at a time.
+TRUE: To create a ButtonGroup in a JFrame and then add a JCheckBox, you must add both the JCheckBox to the ButtonGroup and add the ButtonGroup to the JFrame.
+TRUE: You can create a ButtonGroup and then create the individual JCheckBox objects, or you can create the JCheckBoxes and then create the ButtonGroup
+
+pg621) //TOFINISH
+When a user clicks a JComboBox, a list of alternative items drops down; if the user selects one, it replaces the box’s displayed item.
+You must construct a JComboBox by using an array of initializers as the constructor argument.
+You can treat the list of items in a JComboBox object as an array: the first item is at position 0, the second at position 1, and so on.
