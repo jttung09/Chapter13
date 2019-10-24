@@ -60,7 +60,8 @@ so a user can select only one at a time.
 TRUE: To create a ButtonGroup in a JFrame and then add a JCheckBox, you must add both the JCheckBox to the ButtonGroup and add the ButtonGroup to the JFrame.
 TRUE: You can create a ButtonGroup and then create the individual JCheckBox objects, or you can create the JCheckBoxes and then create the ButtonGroup
 
-pg621) //TOFINISH
-When a user clicks a JComboBox, a list of alternative items drops down; if the user selects one, it replaces the box’s displayed item.
-You must construct a JComboBox by using an array of initializers as the constructor argument.
-You can treat the list of items in a JComboBox object as an array: the first item is at position 0, the second at position 1, and so on.
+pg621) 
+TRUE: When a user clicks a JComboBox, a list of alternative items drops down; if the user selects one, it replaces the box’s displayed item.
+FALSE: You must construct a JComboBox by using an array of initializers as the constructor argument.
+-> You can build a JComboBox by using a constructor with no arguments and then adding items to the list, or you can use an array of initializers as the constructer argument.
+TRUE: You can treat the list of items in a JComboBox object as an array: the first item is at position 0, the second at position 1, and so on.
